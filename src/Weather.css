@@ -1,0 +1,72 @@
+.weather-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 2px 2px 12px rgba(12, 142, 248, 0.219);
+  transition: transform 0.2s;
+}
+
+.weather-card:hover {
+  transform: scale(1.20);
+  transition: transform 1s ease;
+}
+
+.weather-card:not(:hover) {
+  transform: scale(1.0);
+  transition: transform 1s ease;
+}
+
+.weather-card-title{
+  font-size: 1.5em;
+  margin-bottom: 8px;
+  margin-top: 1px;
+}
+
+.weather-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  margin-left: -9px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 2px 2px 12px rgba(12, 142, 248, 0.219);
+  background-color: #2b2b2b;
+}
+
+.weather-input:hover {
+  transform: scale(1.02);
+  transition: transform 1s ease-in-out, opacity 1s ease-in;
+  opacity: 100%;
+}
+
+.weather-input:not(:hover) {
+  transform: scale(1.00);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  opacity: 25%;
+}
+
+.weather-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2b2b2b;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 0px #5b8fff91;
+}
+
+.weather-button:hover {
+  background-color: #293036;
+  box-shadow: 0px 0px 8px 0px #72ff8591;
+  transition: 0.5s ease;
+  opacity: 100%;
+}
+
+.weather-button:not(:hover) {
+  background-color: #293036;
+  box-shadow: 0px 0px 4px 0px #5b8fff91;
+  transition: 0.5s ease;
+  opacity: 45%;
+}
